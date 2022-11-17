@@ -1,0 +1,9 @@
+#box1,#box2,#box3{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+

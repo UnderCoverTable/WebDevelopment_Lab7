@@ -5,41 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>    <script src="script.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            $("#change-button").click(function(){
-
-                const newColor = document.getElementById("cow-color").value;
-                const updatedColor = $("#cow-text").text().replace("Blue",String(newColor));
-                $("#cow-text").text(updatedColor);
-               
-        });
-        $("#change-color1").click(function(){
-            $('#box1').css('background-color', 'pink');
-        });
-        $("#change-border1").click(function(){
-            $('#box1').css('border-radius', '20px 20px 20px 20px');
-        });
-
-        $("#change-color2").click(function(){
-            $('#box2').css('background-color', 'crimson');
-        });
-        $("#change-border2").click(function(){
-            $('#box2').css('border-radius', '30px 30px 30px 30px');
-        });
-
-        $("#change-color3").click(function(){
-            $('#box3').css('background-color', 'darkkhaki');
-        });
-        $("#change-border3").click(function(){
-            $('#box3').css('border-radius', '40px 40px 40px 40px');
-        });
-
-
-        })
-
-    </script>
-
+    
   </head>
   <body>
 
@@ -75,6 +41,68 @@
         <button type="button" id = "change-border3">Toggle Rounded borders</button>
     </div>
 
+    <div id = "Task3">
+
+    </div>
+
+    <div id = "Task4">
+        <div id = "box4">
+
+        </div>
+
+    </div>
 
   </body>
+
+  <script>
+    $(document).ready(function(){
+        $("#change-button").click(function(){
+
+            const newColor = document.getElementById("cow-color").value;
+            const updatedColor = $("#cow-text").text().replace("Blue",String(newColor));
+            $("#cow-text").text(updatedColor);
+           
+    });
+    $("#change-color1").click(function(){
+        $('#box1').css('background-color', 'pink');
+    });
+    $("#change-border1").click(function(){
+        $('#box1').css('border-radius', '20px 20px 20px 20px');
+    });
+
+    $("#change-color2").click(function(){
+        $('#box2').css('background-color', 'crimson');
+    });
+    $("#change-border2").click(function(){
+        $('#box2').css('border-radius', '30px 30px 30px 30px');
+    });
+
+    $("#change-color3").click(function(){
+        $('#box3').css('background-color', 'darkkhaki');
+    });
+    $("#change-border3").click(function(){
+        $('#box3').css('border-radius', '40px 40px 40px 40px');
+    });
+
+
+    })
+
+    $("#box4").mouseover(function(){
+        $("#box4").css('background-color', 'orangered');
+
+    });
+
+    $("#box4").mouseleave(function(){
+        $("#box4").css('background-color', 'aquamarine');
+
+    });
+    
+    
+    $("#box4").click(function(){
+        $('#box4').hide();
+
+    });
+
+</script>
+
 </html>

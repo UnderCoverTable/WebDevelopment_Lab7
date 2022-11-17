@@ -154,14 +154,24 @@
     });
 
     $("#Add").click(function(){
-        $('#table tr:last').after('<tr><td>Na</td><td>Na</td><td>Na</td><td>Na</td></tr>');
+        $('#table tr:last').after('<tr><td></td><td></td><td></td><td></td></tr>');
 
 
     });
-    $("#search").click(function(){
-
-
-    });
+    $('#search').click(() => {
+        $('#table tr').each((index, element) => {
+            if (index !== 0) {
+                $(element).children().each((index, element) => {
+                    if ($(element).html() === "BSCS") {
+                        $(element).css('background-color', 'teal');
+                    }
+                    if ($(element).html() === "MSCS") {
+                        $(element).css('background-color', 'salmon');
+                    }
+                })
+            }
+        })
+    })
 
 </script>
 
